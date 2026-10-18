@@ -8,7 +8,7 @@
 <meta name="description" content="Il ne sait pas cuisiner… et pourtant tout le monde regarde. Les lives cuisine de Bamba sur TikTok.">
 <meta property="og:title" content="La Cuisine de Bamba 39 🍲">
 <meta property="og:description" content="Il ne sait pas cuisiner… et pourtant tout le monde regarde. Choisis le prochain plat du live !">
-<meta property="og:image" content="https://seck93723-lang.github.io/cuisine-de-bamba/cover.jpg">
+<meta property="og:image" content="https://seckappssn-maker.github.io/la-cuisine-de-bamba-39/cover.jpg?v=4">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
@@ -34,9 +34,18 @@
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
+html,body{overflow-x:hidden;max-width:100%}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+main,header,footer,section,.wrap{max-width:100%}
+.wrap{width:100%}
+.menu>*,.wall-photos>*,.schedule>*,.soon>*,.vote>*,.dish>*,.brand,.hero .wrap>*{min-width:0}
+.ph,.ph img{max-width:100%;min-width:0}
+.ph img{position:absolute;inset:0}
+h1,h2,h3,p,.verdict,.slot,.copybox{overflow-wrap:anywhere}
+
 html{background:var(--night)}
 body{background:var(--night);color:var(--cream);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
-.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:760px;margin:0 auto;box-sizing:border-box;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.01em;text-wrap:balance;margin:0;line-height:1.05}
 p{margin:0}
 a{color:inherit}
